@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+   <table>
+      <tr>
+         <td>
+               <img src="jspm_logo.jpeg" alt="Jspm_logo" class="logo1">
+         </td>
+         <td>
+            <div class="header">
+               <h3 style="text-align:center;color: #ef0011;">  JSPM'S  Rajarshi Shahu College of Engineering</h3>
+               <h6 style="text-align:center;color: #ef0011;">
+                  ( An Autonomous Institute Affiliated to Savitribai Phule Pune University,
+                  <br>
+                 Approved by AICTE, Accredited by NBA (UG Programs), Accredited by NAAC With "A" Grade) </h6>
+            </div>
+         </td>
+         <td>
+               <img src="rscoe_logo.jpeg" alt="rscoe_logo" class="logo2">
+         </td>
+      </tr>
+   </table>
+   <button class="button-33" role="button" id="button"><a href="login_page/login.html">Admin Login</a></button>
+<form name="frmContact" method="post" action="insert.php">
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+
+      <!-- ---------------------Student Full Name--------------------- -->
+         <div class="inputfield">
+            <label for="first_name" class="required">First Name</label>
+            <input type="text" class="input" name="first_name" required>
+         </div>
+         <div class="inputfield">
+         <label for="middle_name" class="required">Middle Name</label>
+         <input type="text" class="input" name="middle_name" required>
+         </div>  
+         <div class="inputfield">
+            <label for="last_name" class="required">Last Name</label>
+            <input type="text" class="input" name="last_name" required>
+         </div> 
+
+       <!-- ---------------------Gender--------------------- -->
+         <div class="inputfield">
+            <label for="gender" class="required">Gender</label>
+            <div class="custom_select">
+               <select name="gender" required>
+                  <option value="">Select</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Other">Other</option>
+               </select>
+            </div>
+         </div>
+
+     <!-- ---------------------Category --------------------- -->
+         <div class="inputfield">
+            <label for="category" class="required">Category</label>
+            <div class="custom_select">
+            <select name="category" required>
+               <option value="">Select</option>
+               <option name="category" value="EWS">EWS</option>
+               <option name="category" value="J&K">J&K</option>
+               <option name="category" value="NT">NT</option>
+               <option name="category" value="OBC">OBC</option>
+               <option name="category" value="OPEN">OPEN</option>
+               <option name="category" value="SBC">SBC</option>
+               <option name="category" value="SC">SC</option>
+               <option name="category" value="ST">ST</option>
+               <option name="category" value="Other">Other</option>
+            </select>
+            </div>
+         </div>
+
+      <!-- ---------------------Conatct Infromation--------------------- -->
+         <div class="inputfield">
+         <label class="required" for="email">Email Address</label>
+         <input type="email" class="input" name="email" placeholder="abc123@gmail.com" required>
+         </div>
+         <div class="inputfield">
+         <label class="required" for="phone_number">Phone Number</label>
+         <input type="text" class="input"  placeholder="xxxxxxxxxx " name="phone_number" required>
+         </div> 
+         <div class="inputfield">
+         <label class="required" for="parent_phone_number">Parent Phone Number</label>
+         <input type="text" class="input"  placeholder="xxxxxxxxxx " name="parent_phone_number" required>
+         </div>
+     
+      <!-- ---------------------Academic Details--------------------- -->
+         <div class="inputfield">
+            <label for="ssc" class="required">SSC Total</label>
+            <input type="text" class="input" name="ssc" required>
+         </div> 
+         <div class="inputfield">
+            <label for="board" class="required">Board</label>
+            <div class="custom_select">
+               <select name="board" required>
+                  <option value="">Select</option>
+                  <option value="CBSC">CBSC</option>
+                  <option value="ISCE">ISCE</option>
+                  <option value="Maharashtra state board">Maharashtra State Board</option>
+                  <option value="Other">Other</option>
+               </select>
+            </div>
+         </div>
+         <div class="inputfield">
+            <label for="hsc" class="required">HSC Total</label>
+            <input type="Text" name="hsc" class="input" required>
+         </div> 
+         <div class="inputfield">
+         <label for="pcm" class="required">PCM Total</label>
+         <input type="Text" class="input" name="pcm" required>
+         </div>
+         <div class="inputfield">
+            <label for="jee_yn" class="required">Are you appeared for Jee?</label>
+            <div class="custom_select">
+               <select name="jee_yn" required>
+                  <option value="">Select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+               </select>
+            </div>
+         </div>
+         <div class="inputfield">
+         <label for="cet">CET Score</label>
+         <input type="Text" name="cet" class="input">
+         </div>
+         <div class="inputfield">
+         <label for="jee">JEE Score</label>
+         <input type="Text" name="jee" class="input">
+         </div> 
+         
+      <!-- ---------------------Address--------------------- -->   
+         <div class="inputfield">
+            <label class="required" for="address">Address</label>
+            <textarea class="textarea" name="address" placeholder="Enter Permanent Address" required></textarea>
+         </div>  
+      <!-- ---------------------Intrested Fields--------------------- -->
+         <div class="inputfield">
+          <label class="required">Intrested Field</label><br>
+          <input type="checkbox" name="field[]" value="Computer Science and Business System">
+          <label> Computer Science and Business System</label><br>
+
+          <input type="checkbox" name="field[]" value="Computer Engineering">
+          <label> Computer Engineering</label><br>
+
+          <input type="checkbox" name="field[]" value="Information Technology">
+          <label> Information Technology</label><br>
+
+          <input type="checkbox" name="field[]" value="Electronics and Telecommunication Engineering">
+          <label> Electronics and Telecommunication Engineering</label><br>
+
+          <input type="checkbox" name="field[]" value="Electrical Engineering">
+          <label> Electrical Engineering</label><br>
+
+          <input type="checkbox" name="field[]" value="Mechanical Engineering">
+          <label> Mechanical Engineering</label><br>
+
+          <input type="checkbox" name="field[]" value="Civil Engineering">
+          <label> Civil Engineering</label><br>
+
+          <input type="checkbox" name="field[]" value="Automation and Robotics">
+          <label> Automation and Robotics</label><br>
+
+         </div>
+
+
+   <!-- ----------------------Counselling By------------------------  -->
+   <div class="inputfield">
+      <label class="required" for="CB">Counselling By</label>
+      <textarea class="textarea" name="CB" placeholder="Counseller Name" required></textarea>
+   </div>
+
+  <!-- ----------------------submit button------------------------  -->
+         <div class="inputfield">
+         <input type="submit" name="Submit" value="Submit" class="btn">
+         </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="home_css.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Login</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login.php" method="post">
+            <div class="form_div">
+                <label>Login:</label>
+                <input class="field_class" name="email" type="text" placeholder="Enter Email" autofocus required>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password" type="password" placeholder="Enter Password" required>
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()" name="login">Login</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
